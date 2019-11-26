@@ -13,18 +13,20 @@ npm install --save use-simple-audio
 ## Usage
 
 ```tsx
-import * as React from 'react'
+import * as React from 'react';
+import useSimpleAudio from 'use-simple-audio';
 
-import { useMyHook } from 'use-simple-audio'
+const App = () => {
+  const { play, pause, stop } = useSimpleAudio('/sample.mp3');
 
-const Example = () => {
-  const example = useMyHook()
   return (
     <div>
-      {example}
+      <button onClick={play}>PLAY</button>
+      <button onClick={pause}>PAUSE</button>
+      <button onClick={stop}>STOP</button>
     </div>
-  )
-}
+  );
+};
 ```
 
 ## License
