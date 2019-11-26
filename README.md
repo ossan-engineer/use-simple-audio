@@ -1,7 +1,5 @@
 # use-simple-audio
 
-The simplest React hook to play SE.
-
 [![NPM](https://img.shields.io/npm/v/use-simple-audio.svg)](https://www.npmjs.com/package/use-simple-audio) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
