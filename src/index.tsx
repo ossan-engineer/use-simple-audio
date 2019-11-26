@@ -1,23 +1,26 @@
-import * as React from 'react';
+import { useEffect } from 'react';
 
-export const useMyHook = () => {
-  let [{
-    counter
-  }, setState] = React.useState<{
-    counter: number;
-  }>({
-    counter: 0
-  });
+const useAudio = (src: string, loop: boolean = false) => {
+  const audio = new Audio(src);
 
-  React.useEffect(() => {
-    let interval = window.setInterval(() => {
-      counter++;
-      setState({counter})
-    }, 1000)
-    return () => {
-      window.clearInterval(interval);
-    };
-  }, []);
+  useEffect(() => {
+    audio.addEventListener('ended', () => {
+      audio.currentTime = 0;
 
-  return counter;
+      if (loop) {
+        audio.play();
+      }
+    });
+  }, [audio, loop]);
+
+  return {
+    play: () => audio.play(),
+    pause: () => audio.pause(),
+    stop: () => {
+      audio.currentTime = 0;
+      audio.pause();
+    },
+  };
 };
+
+export default useAudio;

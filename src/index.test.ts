@@ -1,7 +1,7 @@
-import { useMyHook } from './'
+import useSimpleAudio from './';
 
-describe('useMyHook', () => {
+describe('useSimpleAudio', () => {
   it('is truthy', () => {
-    expect(useMyHook).toBeTruthy()
-  })
-})
+    expect(useSimpleAudio).toBeTruthy();
+  });
+});
