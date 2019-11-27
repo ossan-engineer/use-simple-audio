@@ -1,12 +1,9 @@
 import { useEffect } from 'react';
 
 const useAudio = (src: string, loop: boolean = false) => {
-  console.log('USE_ADUDIO');
   const audio = new Audio(src);
 
   useEffect(() => {
-    console.log('USE_EFFECT');
-
     const handleEnded = () => {
       audio.currentTime = 0;
 
