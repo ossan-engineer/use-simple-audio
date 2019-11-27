@@ -15,7 +15,7 @@ import * as React from 'react';
 import useSimpleAudio from 'use-simple-audio';
 
 const App = () => {
-  const { play, pause, stop } = useSimpleAudio('/sample.mp3');
+  const { play, pause, stop } = useSimpleAudio('/sample.mp3', true);
 
   return (
     <div>
