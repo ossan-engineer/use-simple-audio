@@ -1,6 +1,6 @@
 {
   "name": "use-simple-audio",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "The simplest React hook to play SE.",
   "author": "ossan-engineer",
   "license": "MIT",
