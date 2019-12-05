@@ -1,4 +1,4 @@
-import { useMemo, useEffect } from 'react';
+import { useMemo, useEffect, useCallback } from 'react';
 
 const useAudio = (src: string, loop: boolean = false) => {
   const audio = useMemo(() => new Audio(src), [src]);
@@ -17,12 +17,12 @@ const useAudio = (src: string, loop: boolean = false) => {
   }, [audio, loop]);
 
   return {
-    play: () => audio.play(),
-    pause: () => audio.pause(),
-    stop: () => {
+    play: useCallback(() => audio.play(), [audio]),
+    pause: useCallback(() => audio.pause(), [audio]),
+    stop: useCallback(() => {
       audio.currentTime = 0;
       audio.pause();
-    }
+    }, [audio])
   };
 };
 
