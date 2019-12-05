@@ -1,7 +1,7 @@
-import { useEffect } from 'react';
+import { useMemo, useEffect } from 'react';
 
 const useAudio = (src: string, loop: boolean = false) => {
-  const audio = new Audio(src);
+  const audio = useMemo(() => new Audio(src), [src]);
 
   useEffect(() => {
     const handleEnded = () => {
