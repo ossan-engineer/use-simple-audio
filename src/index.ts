@@ -17,12 +17,15 @@ const useAudio = (src: string, loop: boolean = false) => {
   }, [audio, loop]);
 
   return {
-    play: useCallback(() => audio.play(), [audio]),
+    play: useCallback(() => {
+      audio.currentTime = 0;
+      audio.play();
+    }, [audio]),
     pause: useCallback(() => audio.pause(), [audio]),
     stop: useCallback(() => {
       audio.currentTime = 0;
       audio.pause();
-    }, [audio])
+    }, [audio]),
   };
 };
 
