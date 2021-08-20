@@ -6,7 +6,7 @@
   "private": true,
   "dependencies": {
     "react": "link:../node_modules/react",
-    "react-dom": "16.12.0",
+    "react-dom": "16.14.0",
     "react-scripts": "4.0.3",
     "use-simple-audio": "link:.."
   },
