@@ -1318,20 +1318,34 @@
   resolved "https://registry.yarnpkg.com/@types/q/-/q-1.5.2.tgz#690a1475b84f2a884fd07cd797c00f5f31356ea8"
   integrity sha512-ce5d3q03Ex0sy4R14722Rmt6MT07Ua+k4FwDfdcToYJcMKNtRVQvJ6JCAPdAmAnbRb6CsX6aYb9m96NGod9uTw==
 
-"@types/react-dom@^16.9.4":
-  version "16.9.4"
-  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-16.9.4.tgz#0b58df09a60961dcb77f62d4f1832427513420df"
-  integrity sha512-fya9xteU/n90tda0s+FtN5Ym4tbgxpq/hb/Af24dvs6uYnYn+fspaxw5USlw0R8apDNwxsqumdRoCoKitckQqw==
+"@types/react-dom@16.9.14":
+  version "16.9.14"
+  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-16.9.14.tgz#674b8f116645fe5266b40b525777fc6bb8eb3bcd"
+  integrity sha512-FIX2AVmPTGP30OUJ+0vadeIFJJ07Mh1m+U0rxfgyW34p3rTlXI+nlenvAxNn4BP36YyI9IJ/+UJ7Wu22N1pI7A==
   dependencies:
-    "@types/react" "*"
+    "@types/react" "^16"
 
-"@types/react@*", "@types/react@16.9.13":
+"@types/react@16.9.13":
   version "16.9.13"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-16.9.13.tgz#b3ea5dd443f4a680599e2abba8cc66f5e1ce0059"
   integrity sha512-LikzRslbiufJYHyzbHSW0GrAiff8QYLMBFeZmSxzCYGXKxi8m/1PHX+rsVOwhr7mJNq+VIu2Dhf7U6mjFERK6w==
   dependencies:
     "@types/prop-types" "*"
     csstype "^2.2.0"
+
+"@types/react@^16":
+  version "16.14.14"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.14.14.tgz#853de95a32a6a0e719192e222eacad024add2b8e"
+  integrity sha512-uwIWDYW8LznHzEMJl7ag9St1RsK0gw/xaFZ5+uI1ZM1HndwUgmPH3/wQkSb87GkOVg7shUxnpNW8DcN0AzvG5Q==
+  dependencies:
+    "@types/prop-types" "*"
+    "@types/scheduler" "*"
+    csstype "^3.0.2"
+
+"@types/scheduler@*":
+  version "0.16.2"
+  resolved "https://registry.yarnpkg.com/@types/scheduler/-/scheduler-0.16.2.tgz#1a62f89525723dde24ba1b01b092bf5df8ad4d39"
+  integrity sha512-hppQEBDmlwhFAXKJX2KnWLYu5yMfi91yazPb2l+lbJiwW+wdo1gNeRA+3RgNSO39WYX2euey41KEwnqesU2Jew==
 
 "@types/stack-utils@^1.0.1":
   version "1.0.1"
@@ -3109,6 +3123,11 @@ csstype@^2.2.0:
   version "2.6.7"
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.6.7.tgz#20b0024c20b6718f4eda3853a1f5a1cce7f5e4a5"
   integrity sha512-9Mcn9sFbGBAdmimWb2gLVDtFJzeKtDGIr76TUqmjZrw9LFXBMSU70lcs+C0/7fyCd6iBDqmksUcCOUIkisPHsQ==
+
+csstype@^3.0.2:
+  version "3.0.8"
+  resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.0.8.tgz#d2266a792729fb227cd216fb572f43728e1ad340"
+  integrity sha512-jXKhWqXPmlUeoQnF/EhTtTl4C9SnrxSH/jZUih3jmO6lBKr99rP3/+FmrMj4EFpOXzMtXHAZkd3x0E6h6Fgflw==
 
 cyclist@^1.0.1:
   version "1.0.1"
