@@ -8,24 +8,22 @@
 npm install --save use-simple-audio
 ```
 
-## Usage
+## API Options
 
-```tsx
-import * as React from 'react';
-import useSimpleAudio from 'use-simple-audio';
-
-const App = () => {
-  const { play, pause, stop } = useSimpleAudio('/sample.mp3', true);
-
-  return (
-    <div>
-      <button onClick={play}>PLAY</button>
-      <button onClick={pause}>PAUSE</button>
-      <button onClick={stop}>STOP</button>
-    </div>
-  );
-};
 ```
+const { play, pause, stop } = useSimpleAudio(src, loop)
+```
+
+## Paramters
+
+- `src`: audio file path
+- `loop`: (optional) flag for loop playback
+
+## Return Values
+
+- `play`: play audio function
+- `pause`: pause audio function
+- `stop`: stop audio function
 
 ## License
 
