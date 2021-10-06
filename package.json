@@ -27,7 +27,7 @@
     "react": "^16.8.6 || ^17.0.0"
   },
   "devDependencies": {
-    "@babel/core": "7.15.5",
+    "@babel/core": "7.15.8",
     "@babel/runtime": "7.15.4",
     "@types/jest": "27.0.2",
     "@types/react": "17.0.24",
