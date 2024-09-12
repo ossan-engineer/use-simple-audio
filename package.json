@@ -29,7 +29,7 @@
   "devDependencies": {
     "@babel/core": "7.21.3",
     "@babel/runtime": "7.21.0",
-    "@types/jest": "27.5.2",
+    "@types/jest": "29.5.13",
     "@types/react": "17.0.53",
     "cross-env": "7.0.3",
     "gh-pages": "3.2.3",
